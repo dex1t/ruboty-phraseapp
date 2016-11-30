@@ -3,7 +3,7 @@ require 'phraseapp-ruby'
 module Ruboty
   module Handlers
     class Trello < Base
-      on /phraseapp\sstats\slocale\s(?<locale_id>.*?)\z/, name: 'stats_locale', description: 'Show the stats of specified locale'
+      on /phraseapp stats locale (?<locale_id>.*?)\z/, name: 'stats_locale', description: 'Show the stats of specified locale'
 
       def stats_locale(message)
         client = PhraseApp::Client.new(PhraseApp::Auth::Credentials.new(token: ENV['PHRASEAPP_ACCESS_TOKEN']))
