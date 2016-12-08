@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruboty plugin for phraseapp}
   spec.description   = %q{Ruboty plugin for phraseapp}
-  spec.homepage      = 'https://github.com/bitjourney/ruboty-phraseapp'
+  spec.homepage      = 'https://github.com/dex1t/ruboty-phraseapp'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
