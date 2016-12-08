@@ -16,7 +16,7 @@ module Ruboty
         reply_message = [
           "#{data.name}(#{data.code}):flag-#{country}: translation stats",
           "unverified: #{unverified} #{unverified > 0 ? ':warning:' : ':ok_hand:'}",
-          "untranslated: #{untranslated} #{unverified > 0 ? ':warning:' : ':ok_hand:'}"
+          "untranslated: #{untranslated} #{untranslated > 0 ? ':warning:' : ':ok_hand:'}"
         ]
 
         message.reply reply_message.join("\n")
